@@ -1,0 +1,117 @@
+body {
+  main {
+    .noline {
+      border: none;
+      margin-top: 120px;
+    }
+    .pay {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      color: #ffedba;
+      .purchasing {
+        .purchasing_info {
+          li {
+            margin: 50px 0;
+            display: flex;
+            input {
+              background-color: transparent;
+              border: 0.5px solid #ffedba;
+              border-radius: 5px;
+              height: 50px;
+              color: #ffedba;
+              padding-left: 18px;
+              width: 100%;
+            }
+            .name {
+              width: 850px;
+              margin-right: 50px;
+              &:last-child {
+                width: -webkit-fill-available;
+                margin-right: 0;
+              }
+            }
+            .card {
+              margin-right: 50px;
+              &:last-child {
+                width: -webkit-fill-available;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .topay {
+      text-align: center;
+      margin-top: 50px;
+      a {
+        color: #000;
+        background-color: #ffedba;
+        padding: 12px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    main {
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      a,
+      .pay > .purchasing > .purchasing_info > li > input {
+        font-size: 10px;
+      }
+      .pay > .purchasing > .purchasing_info > li > .name {
+        margin-right: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    main {
+      h3 {
+        font-size: 12px;
+      }
+      a {
+        font-size: 12px;
+      }
+      .noline {
+        margin-top: 50px;
+      }
+      .pay {
+        .purchasing {
+          .purchasing_info {
+            li {
+              margin: 25px 0;
+              input {
+                height: 28px;
+                font-size: 8px;
+              }
+              .name {
+                width: 80%;
+                margin-right: 20px;
+              }
+              .card {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+      .topay {
+        a {
+          font-size: 8px;
+          padding: 8px 32px;
+        }
+      }
+    }
+  }
+}

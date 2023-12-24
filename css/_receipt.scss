@@ -1,0 +1,169 @@
+body {
+  .receipt {
+    h2 {
+      color: #fff;
+      margin: 150px 0;
+    }
+    img {
+      width: 40%;
+    }
+    .slogan {
+      display: flex;
+      justify-content: center;
+      .receipt_slogan {
+        position: relative;
+        margin: 0 100px;
+        h1 {
+          font-family: "Hurricane";
+          font-size: 48px;
+          letter-spacing: 3px;
+          font-weight: 100;
+          color: #fff;
+          line-height: 65px;
+          margin: 280px 30px;
+        }
+        .receipt_txt {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          position: absolute;
+          top: 25%;
+          left: 0;
+        }
+      }
+    }
+  }
+  main {
+    .cook {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h2 {
+        color: #fff;
+        letter-spacing: 1.5px;
+      }
+      .cook_container {
+        display: flex;
+        margin-top: 100px;
+        .cook_left {
+          img {
+            width: 450px;
+          }
+        }
+        .cook_right {
+          text-align: start;
+          position: relative;
+          width: -webkit-fill-available;
+          margin-left: 50px;
+          h3 {
+            margin: 0;
+            color: #ffedba;
+            font-size: 22px;
+            letter-spacing: 1.5px;
+          }
+          .readmore {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            a {
+              padding: 12px;
+              background-color: #727171;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    .receipt {
+      .slogan {
+        .receipt_slogan {
+          h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            line-height: 52px;
+            margin: 280px 0px;
+          }
+          .receipt_txt {
+            top: 28%;
+          }
+
+        }
+      }
+    }
+    main {
+      h2 {
+        font-size: 22px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+      a {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .receipt {
+      h2 {
+        font-size: 18px;
+        margin: 50px 0;
+      }
+      .slogan {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        .receipt_slogan {
+          position: relative;
+          margin: 0;
+          h1 {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 80px 0;
+          }
+          .receipt_txt {
+            top: 20%;
+          }
+        }
+      }
+    }
+    main {
+      .cook {
+        h2 {
+          color: #fff;
+          font-size: 12px;
+          margin: 0 0 40px;
+        }
+        .cook_container {
+          margin-top: 20px;
+          .cook_left {
+            width: fit-content;
+            img {
+              width: 80%;
+            }
+          }
+          .cook_right {
+            margin-left: 0;
+            h3 {
+              font-size: 12px;
+              letter-spacing: 0;
+            }
+            .readmore {
+              a {
+                padding: 5px;
+                font-size: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

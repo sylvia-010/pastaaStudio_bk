@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farfalle</title>
+    <link rel="icon" href="img/Pasta_00.svg" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Hurricane&family=IBM+Plex+Serif:wght@300;400&family=Inter:wght@100;200;300;400&family=Shippori+Mincho+B1:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_group">
+        <ul class="nav_wrap">
+          <li>
+            <a href="index.html">
+              <img src="img/Logo.svg" alt="" />
+            </a>
+          </li>
+          <li><a href="pasta.html">PASTA</a></li>
+          <li><a class="line" href="receipt.html">RECEIPT</a></li>
+          <li><a class="line" href="about.html">ABOUT</a></li>
+          <li>
+            <a class="mycart" href="cart.html">
+              <img src="img/Cart.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="detail_type">
+        <div class="detail_wrap">
+          <div class="detail_left">
+            <div class="deco"><img src="img/Pasta_03.svg" alt="" /></div>
+          </div>
+          <div class="detail_right">
+            <h2>Garganelli</h2>
+            <h3>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi iusto sit enim corporis itaque rerum nostrum nisi nulla, voluptatem voluptatum aliquam quidem quo explicabo eveniet quasi repellat sequi! Culpa, similique.
+            </h3>
+            <h3>$20.59</h3>
+          </div>
+        </div>
+      </div>
+      <div class="add">
+        <form action="#">
+          <input id="minus" type="button" value="-" field="quantity" />
+          <input id="quantity" type="text" name="quantity" value="0" />
+          <input id="plus" type="button" value="+" field="quantity" />
+        </form>
+        <div class="tocart"><a href="cart03.html">ADD TO CART</a></div>
+      </div>
+      <div class="des">
+        <h3>Description</h3>
+        <h3>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia iure
+          distinctio alias temporibus illo praesentium ratione nulla, saepe
+          quaerat sed ut quisquam explicabo ab commodi ullam assumenda. Maxime,
+          aliquam non. Quas, maiores, nam aperiam doloribus ipsum earum
+          sapiente, ut accusantium quia nemo voluptatum voluptates ipsa illo
+          explicabo minima error molestiae odio nesciunt commodi veritatis at a
+          omnis quo. Amet, officia. Similique vitae est, nostrum eligendi unde
+          illum odit placeat asperiores saepe impedit voluptatum quod incidunt
+          exercitationem itaque ducimus in, et nobis? 
+        </h3>
+      </div>
+      <div class="pro">
+        <h2 class="deco_line">Get More Of What You Love</h2>
+        <div class="love_container">
+          <div class="love_wrap">
+            <a href="fusilli.html" class="pro_pic"><img src="img/Pasta_04.svg" alt="" /></a>
+            <h2>Fusilli</h2>
+            <h3>$20.59</h3>
+          </div>
+          <div class="love_wrap">
+            <a href="macaroni.html" class="pro_pic"><img src="img/Pasta_05.svg" alt="" /></a>
+            <h2>Macaroni</h2>
+            <h3>$20.59</h3>
+          </div>
+          <div class="love_wrap">
+            <a href="lasagne.html" class="pro_pic"><img src="img/Pasta_06.svg" alt="" /></a>
+            <h2>Lasagne</h2>
+            <h3>$20.59</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul class="footer_nav">
+        <li>
+          <a href="">
+            <img src="img/Facebook.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/Instagram.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="img/Email.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+      <p>版權所有Copyright©2023 pastataa Studio All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script>
+    $(function () {
+      $("#plus").click(function (e) {
+        event.preventDefault();
+        fieldName = $(this).attr("field");
+        var currentVal = parseInt($("input[name=" + fieldName + "]").val());
+        if (!isNaN(currentVal)) {
+          $("input[name=" + fieldName + "]").val(currentVal + 1);
+        } else {
+          $("input[name=" + fieldName + "]").val(0);
+        }
+      });
+
+      $("#minus").click(function (e) {
+        event.preventDefault();
+        fieldName = $(this).attr("field");
+        var currentVal = parseInt($("input[name=" + fieldName + "]").val());
+        if (!isNaN(currentVal) && currentVal > 0) {
+          $("input[name=" + fieldName + "]").val(currentVal - 1);
+        } else {
+          $("input[name=" + fieldName + "]").val(0);
+        }
+      });
+    });
+  </script>
+</html>

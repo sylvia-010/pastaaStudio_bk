@@ -1,0 +1,25 @@
+@import 'normalize.css';
+@import '_variable';
+@import '_pasta';
+@import '_farfalle';
+@import '_cart';
+@import 'payment';
+@import '_paid';
+@import '_receipt';
+@import '_cook';
+@import '_about';
+
+body {
+    background-color: #262525;
+    text-align: center;
+    margin: 50px 0;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+    a, p, h2, h3, h4, input {
+        text-decoration: none;
+        font-family: 'IBM Plex Serif', 'serif';
+    }
+}

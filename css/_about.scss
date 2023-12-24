@@ -1,0 +1,197 @@
+body {
+  .about {
+    h2 {
+      color: #fff;
+      margin-top: 150px;
+    }
+    img {
+      width: 50%;
+    }
+    .slogan {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .about_slogan {
+        h1 {
+          font-family: "Hurricane";
+          font-size: 38px;
+          letter-spacing: 3.5px;
+          font-weight: 100;
+          color: #fff;
+          line-height: 64px;
+        }
+        img {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 3.5%;
+          position: absolute;
+        }
+        .about01 {
+          left: -0.7%;
+          top: 0;
+          width: 5%;
+        }
+        .about02 {
+          left: 18%;
+          top: 23%;
+        }
+        .about03 {
+          left: 13%;
+          top: 45%;
+        }
+        .about04 {
+          right: 17%;
+          top: 40%;
+        }
+        .about05 {
+          right: 24%;
+          top: 58%;
+        }
+        .about06 {
+          right: 0;
+          top: 72%;
+          width: 50%;
+        }
+        .about07 {
+          left: 10%;
+          bottom: -17%;
+        }
+      }
+    }
+  }
+  main {
+    .contact {
+      color: #fff;
+      margin-top: 450px;
+      position: relative;
+      img {
+        width: 5%;
+        position: absolute;
+        right: 33%;
+        top: 2%;
+      }
+      .contact_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 60px;
+        input,
+        textarea {
+          border: none;
+          background-color: #dfd1a6;
+          color: #fff;
+          border-radius: 5px;
+          padding-left: 18px;
+          height: 65px;
+          margin: 22px 50px;
+        }
+        textarea {
+          height: 450px;
+          padding-top: 25px;
+        }
+      }
+      .send {
+        a {
+          padding: 12px 42px;
+          border: 0.75px solid #dfd1a6;
+          color: #dfd1a6;
+          background-color: #000;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    .about {
+      h2 {
+        font-size: 22px;
+      }
+      .slogan {
+        .about_slogan {
+          h1 {
+            font-size: 28px;
+            line-height: 54px;
+          }
+        }
+      }
+    }
+    main {
+      .contact {
+        margin-top: 280px;
+        h2 {
+          font-size: 22px;
+        }
+        .contact_block {
+          margin: 45px;
+          input,
+          textarea {
+            font-size: 10px;
+          }
+        }
+      }
+      .send {
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    .about {
+      h2 {
+        margin-top: 50px;
+        font-size: 18px;
+      }
+      .slogan {
+        .about_slogan {
+          h1 {
+            font-size: 24px;
+            line-height: 54px;
+            letter-spacing: 0.5px;
+          }
+          .about07 {
+            bottom: 0;
+          }
+        }
+      }
+    }
+    main {
+      .contact {
+        margin-top: 0;
+        h2 {
+          font-size: 18px;
+        }
+        img {
+          right: 25%;
+          top: 2%;
+        }
+        .contact_block {
+          margin: 0;
+          margin-top: 25px;
+          input,
+          textarea {
+            height: 30px;
+            margin: 10px 30px;
+            font-size: 8px;
+          }
+          textarea {
+            height: 200px;
+          }
+        }
+        .send {
+          margin-top: 20px;
+          a {
+            font-size: 8px;
+            padding: 8px 25px;
+          }
+        }
+      }
+    }
+  }
+}
